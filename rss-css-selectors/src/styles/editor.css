@@ -1,0 +1,110 @@
+.editor {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  margin: 4vh 0 3vh;
+  border-radius: 5px;
+  border: 8px solid rgba(0, 0, 0, 0.4);
+  line-height: 1.6rem;
+}
+
+.editor__header {
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d4356;
+}
+
+.editor__filename {
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.editor__css-editor {
+  background-color: #e0dfd1;
+  color: #2d4356;
+  padding: 0.5rem 0.75rem;
+}
+
+.editor__window {
+  display: grid;
+  grid-template-columns: 33px auto;
+  overflow-y: auto;
+}
+
+.editor__lines-block {
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+.editor__lines-block--css {
+  color: #2d4356;
+  background-color: #dacd86;
+}
+
+.editor__lines-block--html {
+  background-color: #2c3639;
+  border-right: 1px solid #37474f;
+}
+
+.editor__lines-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  opacity: 0.7;
+  text-align: end;
+}
+
+.editor__html-viewer {
+  background-color: #2c3639;
+  padding: 0.5rem 0.75rem;
+}
+
+.editor__input-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.editor__input {
+  flex-grow: 1;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  animation: input 0.5s infinite;
+}
+
+.editor__input:focus {
+  outline: none;
+}
+
+.editor__button {
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+}
+
+.editor__code {
+  opacity: 0.7;
+}
+
+.editor__block {
+  flex-basis: 50%;
+}
+
+@keyframes input {
+  50% {
+    background: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .editor {
+    width: 98%;
+  }
+
+  .editor__input {
+    width: 100%;
+  }
+}

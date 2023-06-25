@@ -1,0 +1,70 @@
+@import url('main.css');
+@import url('table.css');
+@import url('items.css');
+@import url('nav.css');
+@import url('editor.css');
+@import url('footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 500px;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  color: #dcd7c9;
+  font-family: 'Space Grotesk', 'Helvetica', sans-serif;
+}
+
+* {
+  scrollbar-width: 8px;
+  scrollbar-color: #dcd7c9 #8d8b87;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #8d8b87;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dcd7c9;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  margin: 0.5rem 3vw;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid rgba(220, 215, 201, 0.4);
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: #2d4356;
+  border: 2px solid rgba(220, 215, 201, 0.8);
+}
+
+.button:active {
+  background-color: #20313f;
+  transition: none;
+}

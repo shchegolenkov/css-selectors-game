@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.footer__copyright {
+  opacity: 0.6;
+}
+
+.footer__link {
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.footer__link:hover {
+  opacity: 0.9;
+}
