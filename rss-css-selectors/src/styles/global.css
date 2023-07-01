@@ -47,6 +47,17 @@ a {
   color: inherit;
 }
 
+pre {
+  margin: 0;
+  font-family: inherit;
+}
+
+code {
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: default;
+}
+
 .button {
   margin: 0.5rem 3vw;
   padding: 0.5rem;

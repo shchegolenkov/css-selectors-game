@@ -21,6 +21,9 @@
 }
 
 .nav__list-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   cursor: pointer;
   padding: 0.5rem 3vw;
   transition: background-color 0.3s;
@@ -28,6 +31,15 @@
 
 .nav__list-item:hover {
   background-color: #2d4356;
+}
+
+.nav__list-item:active {
+  background-color: #20313f;
+  transition: none;
+}
+
+.nav__list-item--current {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav__checkmark {
@@ -48,7 +60,8 @@
 .nav__icon-line {
   width: 100%;
   height: 2px;
-  background-color: #ffcb80;
+  background-color: #dcd7c9;
+  transition: background-color 0.3s;
 }
 
 @media (max-width: 767px) {
@@ -71,6 +84,10 @@
     position: relative;
     z-index: 102;
     transition: transform 0.2s;
+  }
+
+  .nav__icon:hover .nav__icon-line {
+    background-color: #dacd86;
   }
 
   .nav--active .nav__icon {
@@ -98,6 +115,8 @@
   .nav__block {
     position: fixed;
     right: -400px;
+    top: 0;
+    bottom: 0;
     width: 300px;
     z-index: 101;
     transition: ease-in-out 0.3s;
@@ -105,7 +124,5 @@
 
   .nav--active .nav__block {
     right: 0;
-    top: 0;
-    bottom: 0;
   }
 }
