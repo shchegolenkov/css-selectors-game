@@ -23,7 +23,7 @@
 .nav__list-item {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 12px;
   cursor: pointer;
   padding: 0.5rem 3vw;
   transition: background-color 0.3s;

@@ -12,6 +12,10 @@
   animation: shake 0.3s;
 }
 
+.editor--hover {
+  color: #dacd86;
+}
+
 .editor__header {
   padding: 0.625rem;
   display: flex;
@@ -67,6 +71,10 @@
   overflow: auto;
 }
 
+.editor__html-viewer code * {
+  display: block;
+}
+
 .editor__input-block {
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +87,10 @@
   font-family: inherit;
   font-size: inherit;
   border: none;
+  animation: none;
+}
+
+.editor__input:placeholder-shown {
   animation: input 0.5s infinite;
 }
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFB13B;}
+	.st1{opacity:0.1;fill:#FFFFFF;}
+	.st2{opacity:5.000000e-02;}
+	.st3{fill:#571F23;}
+</style>
+<g id="BACKGROUND">
+</g>
+<g id="OBJECTS">
+	<g>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -104.7015 250.1711)" class="st0" cx="249.6" cy="251.5" rx="245.5" ry="245.5"/>
+			
+				<ellipse transform="matrix(0.9855 -0.1695 0.1695 0.9855 -8.9857 40.0459)" class="st1" cx="230" cy="72.6" rx="77.2" ry="43.1"/>
+			<path class="st2" d="M249.6,389.3c-117.1,0-215-82-239.5-191.7c-3.9,17.3-6,35.4-6,53.9C4.1,387.1,114,497,249.6,497
+				c135.6,0,245.5-109.9,245.5-245.5c0-18.5-2.1-36.5-6-53.9C464.6,307.3,366.7,389.3,249.6,389.3z"/>
+		</g>
+		<path class="st3" d="M414.4,89.1C393.3,86,382,69.9,382,69.9s7.8-9.9,30.9-15c9.6-2.1,17.2,8.1,12.2,16.7
+			C422.3,76.5,418.7,82.4,414.4,89.1z"/>
+	</g>
+</g>
+</svg>
