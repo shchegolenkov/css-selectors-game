@@ -4,3 +4,5 @@ export interface Level {
   markup: string[];
   table: string[][];
 }
+
+export type Listener = (...args: string[]) => void;

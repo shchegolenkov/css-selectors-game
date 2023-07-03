@@ -32,3 +32,13 @@
   margin-bottom: 0;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .main__task {
+    display: flex;
+    align-items: center;
+    min-height: 105px;
+    padding: 0px 20px;
+    font-size: 2rem;
+  }
+}
