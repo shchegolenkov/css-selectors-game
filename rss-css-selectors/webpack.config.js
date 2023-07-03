@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
 
 const baseConfig = {
-    entry: path.resolve(__dirname, './src/index'),
+    entry: path.resolve(__dirname, './src/scripts/index'),
     mode: 'development',
     module: {
         rules: [
@@ -15,7 +15,7 @@ const baseConfig = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(ico|gif|png|jpg|jpeg)$/i,
+                test: /\.(ico|gif|png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
             },
             {
