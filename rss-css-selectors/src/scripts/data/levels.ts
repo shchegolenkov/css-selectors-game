@@ -1,9 +1,6 @@
-const LEVELS: {
-  task: string;
-  selectors: string[];
-  markup: string[];
-  table: string[][];
-}[] = [
+import { Level } from '../types/types';
+
+const LEVELS: Level[] = [
   {
     task: 'Select the box',
     selectors: ['box'],
@@ -70,6 +67,24 @@ const LEVELS: {
     ],
   },
   {
+    task: 'Select the only one strawberry on the first plate',
+    selectors: [
+      'strawberry:only-child',
+      'plate:first-child strawberry',
+      'plate:first-child > strawberry',
+      'plate:first-child *',
+      'plate:first-of-type strawberry',
+    ],
+    markup: [
+      '<plate data-number="1">&lt;plate&gt;<strawberry data-number="2" class="editor__inner">&lt;strawberry /&gt;</strawberry>&lt;/plate&gt;</plate>',
+      '<plate data-number="3">&lt;plate&gt;<strawberry data-number="4" class="editor__inner">&lt;strawberry /&gt;</strawberry><strawberry data-number="5" class="editor__inner">&lt;strawberry /&gt;</strawberry><strawberry data-number="6" class="editor__inner">&lt;strawberry /&gt;</strawberry>&lt;/plate&gt;</plate>',
+    ],
+    table: [
+      ['plate', 'strawberry-target'],
+      ['plate', 'strawberry', 'strawberry', 'strawberry'],
+    ],
+  },
+  {
     task: 'Select the red pepper on the plate',
     selectors: [
       'plate .red',
@@ -87,24 +102,6 @@ const LEVELS: {
       '<plate data-number="4">&lt;plate&gt;<pepper data-number="5" class="editor__inner">&lt;pepper class="green" /&gt;</pepper>&lt;/plate&gt;</plate>',
     ],
     table: [['plate', 'pepper-target-red'], ['pepper--red'], ['plate', 'pepper--green']],
-  },
-  {
-    task: 'Select the only one strawberry on the first plate',
-    selectors: [
-      'strawberry:only-child',
-      'plate:first-child strawberry',
-      'plate:first-child > strawberry',
-      'plate:first-child *',
-      'plate:first-of-type strawberry',
-    ],
-    markup: [
-      '<plate data-number="1">&lt;plate&gt;<strawberry data-number="2" class="editor__inner">&lt;strawberry /&gt;</strawberry>&lt;/plate&gt;</plate>',
-      '<plate data-number="3">&lt;plate&gt;<strawberry data-number="4" class="editor__inner">&lt;strawberry /&gt;</strawberry><strawberry data-number="5" class="editor__inner">&lt;strawberry /&gt;</strawberry><strawberry data-number="6" class="editor__inner">&lt;strawberry /&gt;</strawberry>&lt;/plate&gt;</plate>',
-    ],
-    table: [
-      ['plate', 'strawberry-target'],
-      ['plate', 'strawberry', 'strawberry', 'strawberry'],
-    ],
   },
   {
     task: 'Select the plate after the box',
@@ -139,7 +136,7 @@ const LEVELS: {
     ],
   },
   {
-    task: 'Select all the oranges after plate',
+    task: 'Select all the oranges after the plate',
     selectors: ['plate~orange', 'plate ~ orange'],
     markup: [
       '<orange data-number="1">&lt;orange /&gt;</orange>',
